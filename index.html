@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QL Group - Soluções em Diversos Setores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Div para o vídeo de introdução -->
+    <div class="video-overlay">
+        <video autoplay id="intro-video" controls>
+            <source src="VID-20241018-WA0009.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <button id="skip-video">Pular</button>
+    </div>
+
+    <!-- Todo o conteúdo do site vai aqui -->
+    <div class="overlay-content" style="display: none;">
+        <header>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Logo da QL Group" class="logo">
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>Bem-vindo à QL Group</h1>
+                <p>Especialistas em <span class="highlight">Construção Civil</span>, <span class="highlight">Serralharia</span>, <span class="highlight">Logística</span>, <span class="highlight">Informática</span> e <span class="highlight">Segurança Eletrônica</span></p>
+            </section>
+
+            <section class="activities">
+                <div class="activity" onclick="navigateTo('construcao')">
+                    <a href="construcao.html"><h3>Construção Civil</h3></a>
+                </div>
+                <div class="activity" onclick="navigateTo('serralharia')">
+                    <a href="serralharia.html"><h3>Serralharia</h3></a>
+                </div>
+                <div class="activity" onclick="navigateTo('logistica')">
+                    <a href="logistica.html"><h3>Logística</h3></a>
+                </div>
+                <div class="activity" onclick="navigateTo('informatica')">
+                    <a href="informatica.html"><h3>Informática</h3></a>
+                </div>
+                <div class="activity" onclick="navigateTo('seguranca')">
+                    <a href="seguranca.html"><h3>Segurança Eletrônica</h3></a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 QL Group. Todos os direitos reservados.</p>
+            <p>Contacte-nos: +258848426310 / +258872497969</p>
+
+            <!-- Botão para contactar via WhatsApp -->
+            <a href="https://wa.me/258848426310" target="_blank" class="whatsapp-button">
+                <img src="logo.jpg" alt="WhatsApp"> Contacte-nos via WhatsApp
+            </a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
